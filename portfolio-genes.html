@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Cancer Classification - Project Details</title>
+  <title>Project Details - Cancer Classification</title>
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+      body { background-color: #040b14; color: #fff; font-family: "Open Sans", sans-serif; }
+      .portfolio-details { padding: 30px 0; }
+      .portfolio-details h2 { font-size: 26px; font-weight: 700; margin-bottom: 20px; color: #12d640; }
+      .portfolio-info { padding: 30px; box-shadow: 0 0 30px rgba(255, 255, 255, 0.08); border-radius: 8px; }
+      .portfolio-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+      .portfolio-info ul { list-style: none; padding: 0; font-size: 15px; }
+      .portfolio-info ul li { display: flex; }
+      .portfolio-info ul li + li { margin-top: 10px; }
+      .portfolio-info ul li strong { display: inline-block; width: 100px; color: #12d640; }
+      
+      .btn-back {
+          display: inline-block;
+          background: #12d640;
+          color: #000;
+          padding: 8px 25px;
+          border-radius: 50px;
+          transition: 0.3s;
+          font-weight: 600;
+          text-decoration: none;
+          margin-bottom: 20px;
+      }
+      .btn-back:hover { background: #0eb335; color: #fff; text-decoration: none;}
+
+      .detail-img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+      }
+  </style>
 </head>
+
 <body>
+
   <main id="main">
-    <div id="portfolio-details" class="portfolio-details">
+
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+
         <div class="row">
-          <div class="col-lg-12 text-center pt-5">
-            <h2 class="portfolio-title">High-Dimensional Cancer Classification</h2>
-            <a href="index.html" class="btn btn-outline-success mb-4"><i class="bx bx-arrow-back"></i> Back to Home</a>
-          </div>
+            <div class="col-12">
+                <h2 class="text-center">Cancer Classification with High-Dimensional Data</h2>
+                <div class="text-center mb-5">
+                    <a href="index.html#portfolio" class="btn-back"><i class="bx bx-arrow-back"></i> Back to Projects</a>
+                </div>
+            </div>
         </div>
-        <div class="row portfolio-details-container">
+
+        <div class="row">
+
           <div class="col-lg-8">
-            <img src="assets/img/genes.jpg" class="img-fluid" alt="">
+            
+            <img src="images/genes.jpg" class="detail-img" alt="Genes Project Detail">
+
+            <div class="portfolio-description">
+              <h3>Project Overview</h3>
+              <p>
+                This project focuses on analyzing high-dimensional gene expression data to classify cancer types.
+              </p>
+              <p>
+                <strong>The Challenge:</strong> Gene data often contains thousands of variables (genes) but very few samples (patients), making traditional statistical methods difficult to apply.
+              </p>
+              <p>
+                <strong>Solution:</strong> I implemented dimensionality reduction techniques and classification algorithms to accurately identify cancer subtypes, helping to pave the way for more personalized medical treatments.
+              </p>
+            </div>
           </div>
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project Info</h3>
-            <ul>
-              <li><strong>Category</strong>: Bioinformatics / Statistics</li>
-              <li><strong>Tech Stack</strong>: R, High-Dimensional Analysis</li>
-            </ul>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Info</h3>
+              <ul>
+                <li><strong>Category</strong>: Bio-Statistics / ML</li>
+                <li><strong>Tech Stack</strong>: Python, Scikit-learn</li>
+                <li><strong>Focus</strong>: Classification, Healthcare</li>
+              </ul>
+            </div>
           </div>
+
         </div>
-        <div class="row mt-5">
-          <div class="col-lg-12 portfolio-description">
-            <h2>Detailed Story</h2>
-            <p>
-              Analyzed complex gene expression data to classify cancer types.
-            </p>
-            <p>
-              <strong>Challenge:</strong> Gene data is typically "Small N, Large P" (few patients, thousands of genes), which breaks traditional statistical models.
-            </p>
-            <p>
-              <strong>Solution:</strong> Applied advanced dimension reduction techniques and regularized regression methods to isolate significant gene markers associated with specific cancer subtypes, enabling accurate diagnosis from genetic profiles.
-            </p>
-          </div>
-        </div>
+
       </div>
-    </div>
+    </section>
+
   </main>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
