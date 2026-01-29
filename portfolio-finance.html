@@ -1,49 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Company Valuation - Project Details</title>
+  <title>Project Details - Finance</title>
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+      body { background-color: #040b14; color: #fff; font-family: "Open Sans", sans-serif; }
+      .portfolio-details { padding: 30px 0; }
+      .portfolio-details h2 { font-size: 26px; font-weight: 700; margin-bottom: 20px; color: #12d640; }
+      .portfolio-info { padding: 30px; box-shadow: 0 0 30px rgba(255, 255, 255, 0.08); border-radius: 8px; }
+      .portfolio-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+      .portfolio-info ul { list-style: none; padding: 0; font-size: 15px; }
+      .portfolio-info ul li { display: flex; }
+      .portfolio-info ul li + li { margin-top: 10px; }
+      .portfolio-info ul li strong { display: inline-block; width: 100px; color: #12d640; }
+      
+      .btn-back {
+          display: inline-block;
+          background: #12d640;
+          color: #000;
+          padding: 8px 25px;
+          border-radius: 50px;
+          transition: 0.3s;
+          font-weight: 600;
+          text-decoration: none;
+          margin-bottom: 20px;
+      }
+      .btn-back:hover { background: #0eb335; color: #fff; text-decoration: none;}
+
+      .detail-img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+      }
+  </style>
 </head>
+
 <body>
+
   <main id="main">
-    <div id="portfolio-details" class="portfolio-details">
+
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+
         <div class="row">
-          <div class="col-lg-12 text-center pt-5">
-            <h2 class="portfolio-title">Company Valuation & Lasso Regression</h2>
-            <a href="index.html" class="btn btn-outline-success mb-4"><i class="bx bx-arrow-back"></i> Back to Home</a>
-          </div>
+            <div class="col-12">
+                <h2 class="text-center">Company Valuation with Lasso Regression</h2>
+                <div class="text-center mb-5">
+                    <a href="index.html#portfolio" class="btn-back"><i class="bx bx-arrow-back"></i> Back to Projects</a>
+                </div>
+            </div>
         </div>
-        <div class="row portfolio-details-container">
+
+        <div class="row">
+
           <div class="col-lg-8">
-            <img src="assets/img/finance.jpg" class="img-fluid" alt="">
+            
+            <img src="images/finance.jpg" class="detail-img" alt="Finance Project Detail">
+
+            <div class="portfolio-description">
+              <h3>Project Overview</h3>
+              <p>
+                In this project, I utilized statistical learning methods to build a valuation model for companies.
+              </p>
+              <p>
+                <strong>Methodology:</strong> Using R, I applied Lasso Regression to handle multicollinearity and perform feature selection among hundreds of financial indicators. The model successfully identified the key drivers of company value and achieved a high prediction accuracy on the test set.
+              </p>
+              <p>
+                (You can add more details about your R code and analysis results here...)
+              </p>
+            </div>
           </div>
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project Info</h3>
-            <ul>
-              <li><strong>Category</strong>: Financial Statistics</li>
-              <li><strong>Tech Stack</strong>: R Language, Lasso Regression</li>
-            </ul>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Info</h3>
+              <ul>
+                <li><strong>Category</strong>: Statistics / Finance</li>
+                <li><strong>Tech Stack</strong>: R Language, Lasso Regression</li>
+                <li><strong>Focus</strong>: Predictive Modeling</li>
+              </ul>
+            </div>
           </div>
+
         </div>
-        <div class="row mt-5">
-          <div class="col-lg-12 portfolio-description">
-            <h2>Detailed Story</h2>
-            <p>
-              This project focused on predicting company valuation using high-dimensional financial data.
-            </p>
-            <p>
-              <strong>Key Techniques:</strong> I utilized <strong>Lasso Regression</strong> (Least Absolute Shrinkage and Selection Operator) to handle multicollinearity and perform feature selection. By shrinking less important coefficients to zero, the model identified the most critical financial indicators driving company value, creating a robust and interpretable prediction model.
-            </p>
-          </div>
-        </div>
+
       </div>
-    </div>
+    </section>
+
   </main>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
