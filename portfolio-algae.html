@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blue-Green Algae CNN - Project Details</title>
+  <title>Project Details - Algae CNN</title>
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  <style>
+      body { background-color: #040b14; color: #fff; font-family: "Open Sans", sans-serif; }
+      .portfolio-details { padding: 30px 0; }
+      .portfolio-details h2 { font-size: 26px; font-weight: 700; margin-bottom: 20px; color: #12d640; }
+      .portfolio-info { padding: 30px; box-shadow: 0 0 30px rgba(255, 255, 255, 0.08); border-radius: 8px; }
+      .portfolio-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+      .portfolio-info ul { list-style: none; padding: 0; font-size: 15px; }
+      .portfolio-info ul li { display: flex; }
+      .portfolio-info ul li + li { margin-top: 10px; }
+      .portfolio-info ul li strong { display: inline-block; width: 100px; color: #12d640; }
+      
+      .btn-back {
+          display: inline-block;
+          background: #12d640;
+          color: #000;
+          padding: 8px 25px;
+          border-radius: 50px;
+          transition: 0.3s;
+          font-weight: 600;
+          text-decoration: none;
+          margin-bottom: 20px;
+      }
+      .btn-back:hover { background: #0eb335; color: #fff; text-decoration: none;}
+
+      .detail-img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 30px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+      }
+  </style>
 </head>
 
 <body>
+
   <main id="main">
-    <div id="portfolio-details" class="portfolio-details">
+
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+
         <div class="row">
-          <div class="col-lg-12 text-center pt-5">
-            <h2 class="portfolio-title">Smart Lake Monitoring: Detecting Algae with AI</h2>
-            <a href="index.html" class="btn btn-outline-success mb-4"><i class="bx bx-arrow-back"></i> Back to Home</a>
-          </div>
+            <div class="col-12">
+                <h2 class="text-center">Smart Lake Monitoring: Detecting Algae with AI</h2>
+                <div class="text-center mb-5">
+                    <a href="index.html#portfolio" class="btn-back"><i class="bx bx-arrow-back"></i> Back to Projects</a>
+                </div>
+            </div>
         </div>
 
-        <div class="row portfolio-details-container">
+        <div class="row">
+
           <div class="col-lg-8">
-            <img src="assets/img/project.jpg" class="img-fluid" alt="">
+            
+            <img src="images/project.jpg" class="detail-img" alt="Algae Project Detail">
+
+            <div class="portfolio-description">
+              <h3>Detailed Story</h3>
+              <p>
+                <strong>The Challenge:</strong> Traditional water quality testing involves sending boats to collect samples and analyzing them in labs—a slow and expensive process. My goal was to act as an "optometrist" for lakes, determining water health from a single photo.
+              </p>
+              <p>
+                <strong>Methodology - The Upgrade to AI:</strong> Initially, we used color extraction (RGB values) to estimate Chlorophyll-a. However, this method was easily fooled by green tree reflections. To solve this, I implemented a <strong>Convolutional Neural Network (CNN)</strong>.
+              </p>
+              <p>
+                <strong>Why CNN?</strong> Unlike simple color analysis, the CNN mimics the human eye. It identifies texture patterns—like paint-like scum or granular clumps specific to Harmful Algal Blooms (HABs). This allows the model to distinguish between "green water" caused by algae and "green reflections" from trees.
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project Info</h3>
-            <ul>
-              <li><strong>Category</strong>: Computer Vision / Machine Learning</li>
-              <li><strong>Tech Stack</strong>: Python, CNN (Convolutional Neural Networks)</li>
-              <li><strong>Status</strong>: Research Project</li>
-            </ul>
-            <p>
-              Moving from 'Color-based Statistical Analysis' to 'Vision-based Deep Learning' to solve environmental challenges.
-            </p>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Info</h3>
+              <ul>
+                <li><strong>Category</strong>: Computer Vision / ML</li>
+                <li><strong>Tech Stack</strong>: Python, CNN (TensorFlow/Keras)</li>
+                <li><strong>Status</strong>: Research Project</li>
+                <li><strong>Date</strong>: 2023 - Present</li>
+              </ul>
+              <p class="mt-3">
+                Moving from 'Color-based Statistical Analysis' to 'Vision-based Deep Learning' to solve environmental challenges.
+              </p>
+            </div>
           </div>
+
         </div>
 
-        <div class="row mt-5">
-          <div class="col-lg-12 portfolio-description">
-            <h2>Detailed Story</h2>
-            <p>
-              <strong>The Challenge:</strong> Traditional water quality testing involves sending boats to collect samples and analyzing them in labs—a slow and expensive process. My goal was to act as an "optometrist" for lakes, determining water health from a single photo.
-            </p>
-            <p>
-              <strong>Methodology - The Upgrade to AI:</strong>
-              Initially, we used color extraction (RGB values) to estimate Chlorophyll-a. However, this method was easily fooled by green tree reflections. To solve this, I implemented a <strong>Convolutional Neural Network (CNN)</strong>.
-            </p>
-             <p>
-              <strong>Why CNN?</strong> Unlike simple color analysis, the CNN mimics the human eye. It identifies texture patterns—like paint-like scum or granular clumps specific to Harmful Algal Blooms (HABs). This allows the model to distinguish between "green water" caused by algae and "green reflections" from trees, significantly improving diagnostic accuracy.
-            </p>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
+
   </main>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
