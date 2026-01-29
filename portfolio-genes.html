@@ -1,150 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Project Details - Cancer Classification</title>
-  
+  <title>Project Details - Genes</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  
-<style>
-
-      body, main, section, div, h2, h3, p, img {
-          opacity: 1 !important;
-          visibility: visible !important;
-          transform: none !important;
-          animation: none !important;
-      }
-      
-      body { 
-          background-color: #040b14 !important; 
-          color: #ffffff !important; 
-          font-family: "Open Sans", sans-serif; 
-          overflow-y: auto !important; 
-      }
-
-      #main {
-          margin-left: 0 !important; 
-          padding: 0 15px; 
-      }
-      
-      .portfolio-details { padding: 40px 0; }
-
-      .portfolio-details h2 { 
-          font-size: 26px; 
-          font-weight: 700; 
-          margin-bottom: 20px; 
-          color: #12d640 !important; 
-      }
-      
-      .portfolio-info { 
-          padding: 30px; 
-          background: rgba(255, 255, 255, 0.05); 
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
-          border-radius: 8px; 
-          border: 1px solid rgba(255,255,255,0.1);
-      }
-      
-      .portfolio-info h3 { 
-          font-size: 22px; 
-          font-weight: 700; 
-          margin-bottom: 20px; 
-          padding-bottom: 20px; 
-          border-bottom: 1px solid #333; 
-          color: #fff !important;
-      }
-      
-      .portfolio-info ul { list-style: none; padding: 0; font-size: 15px; }
-      .portfolio-info ul li { display: flex; margin-bottom: 10px; color: #ddd; }
-      .portfolio-info ul li strong { display: inline-block; width: 100px; color: #12d640; }
-      
-      .portfolio-description h3 { color: #fff !important; margin-top: 20px;}
-      .portfolio-description p { color: #eee !important; line-height: 1.8; }
-      .portfolio-description strong { color: #12d640; }
-
-      .btn-back {
-          display: inline-block;
-          background: #12d640;
-          color: #000 !important;
-          padding: 10px 30px;
-          border-radius: 50px;
-          transition: 0.3s;
-          font-weight: 700;
-          text-decoration: none;
-          margin-bottom: 30px;
-      }
-      .btn-back:hover { background: #0eb335; color: #fff !important; text-decoration: none;}
-
-      .detail-img {
-          width: 100%;
-          border-radius: 10px;
-          margin-bottom: 30px;
-          box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-          border: 1px solid rgba(255,255,255,0.1);
-      }
+  <style>
+      body { background-color: #040b14 !important; color: #fff; font-family: "Open Sans", sans-serif; }
+      .portfolio-details { padding-top: 40px; }
+      .page-title { text-align: center; margin-bottom: 40px; }
+      .page-title h2 { color: #12d640; font-weight: 700; }
+      .project-image { width: 100%; height: 100%; min-height: 300px; object-fit: cover; border-radius: 10px; border: 1px solid #333; }
+      .portfolio-info-box { background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 10px; height: 100%; border: 1px solid rgba(255,255,255,0.1); }
+      .portfolio-info-box h3 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+      .portfolio-info-box ul { list-style: none; padding: 0; }
+      .portfolio-info-box ul li { margin-bottom: 15px; color: #ccc; }
+      .portfolio-info-box ul li strong { color: #12d640; margin-right: 10px; }
+      .portfolio-description { margin-top: 40px; padding: 20px; }
+      .portfolio-description h3 { color: #12d640; margin-bottom: 20px; }
+      .portfolio-description p { color: #eee; line-height: 1.8; margin-bottom: 20px; }
+      .btn-back { display: inline-block; background: transparent; border: 2px solid #12d640; color: #12d640; padding: 8px 25px; border-radius: 50px; margin-top: 10px; transition: 0.3s; }
+      .btn-back:hover { background: #12d640; color: #000; text-decoration: none; }
   </style>
 </head>
-
 <body>
-
   <main id="main">
-
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
+        <div class="page-title">
+            <h2>Cancer Classification with High-Dimensional Data</h2>
+            <a href="index.html#portfolio" class="btn-back"><i class="bx bx-arrow-back"></i> Back to Projects</a>
+        </div>
         <div class="row">
-            <div class="col-12">
-                <h2 class="text-center">Cancer Classification with High-Dimensional Data</h2>
-                <div class="text-center mb-5">
-                    <a href="index.html#portfolio" class="btn-back"><i class="bx bx-arrow-back"></i> Back to Projects</a>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <img src="images/genes.jpg" class="project-image" alt="Genes Project">
+            </div>
+            <div class="col-lg-5">
+                <div class="portfolio-info-box">
+                    <h3>Project Info</h3>
+                    <ul>
+                        <li><strong>Category:</strong> Bio-Statistics / ML</li>
+                        <li><strong>Tech Stack:</strong> Python, Scikit-learn</li>
+                        <li><strong>Focus:</strong> Classification, Healthcare</li>
+                    </ul>
+                    <p style="font-style: italic; color: #aaa; margin-top: 20px;">
+                        "Solving the 'Curse of Dimensionality' in genetic data."
+                    </p>
                 </div>
             </div>
         </div>
-
         <div class="row">
-
-          <div class="col-lg-8">
-            
-            <img src="images/genes.jpg" class="detail-img" alt="Genes Project Detail">
-
-            <div class="portfolio-description">
-              <h3>Project Overview</h3>
-              <p>
-                This project focuses on analyzing high-dimensional gene expression data to classify cancer types.
-              </p>
-              <p>
-                <strong>The Challenge:</strong> Gene data often contains thousands of variables (genes) but very few samples (patients), making traditional statistical methods difficult to apply.
-              </p>
-              <p>
-                <strong>Solution:</strong> I implemented dimensionality reduction techniques and classification algorithms to accurately identify cancer subtypes, helping to pave the way for more personalized medical treatments.
-              </p>
+            <div class="col-12">
+                <div class="portfolio-description">
+                    <h3>Detailed Story</h3>
+                    <p>
+                        This project focuses on analyzing high-dimensional gene expression data to classify cancer types.
+                    </p>
+                    <p>
+                        <strong>The Challenge:</strong> Gene data often contains thousands of variables (genes) but very few samples (patients), making traditional statistical methods difficult to apply.
+                    </p>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project Info</h3>
-              <ul>
-                <li><strong>Category</strong>: Bio-Statistics / ML</li>
-                <li><strong>Tech Stack</strong>: Python, Scikit-learn</li>
-                <li><strong>Focus</strong>: Classification, Healthcare</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section>
-
   </main>
-
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
