@@ -7,31 +7,47 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* PC端优化：限制图片宽度为 45%，防止图片过大挤压文字 
-			   这样左右布局会更均衡，不会出现“图片巨大”的情况
-			*/
 			@media screen and (min-width: 981px) {
-				.spotlight .image {
-					width: 45% !important;
+				.banner, .spotlight {
+					display: flex !important;
+					flex-direction: row !important;
+					min-height: 80vh;
 				}
-				.spotlight .content {
+				.orient-right {
+					flex-direction: row-reverse !important;
+				}
+				.banner .content, .spotlight .content {
 					width: 55% !important;
+					padding: 4rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
 				}
-				/* 专门针对 Banner 也做同样的限制 */
-				.banner .image {
-					width: 50% !important;
+				.banner .image, .spotlight .image {
+					width: 45% !important;
+					background-image: none !important;
+					display: block !important;
 				}
-				.banner .content {
-					width: 50% !important;
+				.banner .image img, .spotlight .image img {
+					display: block !important;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			@media screen and (max-width: 980px) {
+				.image img {
+					width: 100%;
+					height: auto;
 				}
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<div id="wrapper" class="divided">
+			<div id="wrapper" class="divided">
 
-				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style1 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Hi, I'm Chenyao Qu</h1>
 							<p class="major">
@@ -46,11 +62,11 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/avatar.jpg" alt="Chenyao Qu" />
+							<img src="images/avatar.jpg" alt="" />
 						</div>
 					</section>
 
-				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Technical Expertise</h2>
 							<p>Leveraging advanced statistical methods and machine learning algorithms to drive reproducible research and business insights.</p>
@@ -61,11 +77,11 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/skills.png" alt="Code Screenshot" />
+							<img src="images/skills.png" alt="" />
 						</div>
 					</section>
 
-				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Blue-Green Algae Calibration Model</h2>
 							<p>
@@ -81,11 +97,11 @@
                             </p>
 						</div>
 						<div class="image">
-							<img src="images/project.jpg" alt="Project Flowchart" />
+							<img src="images/project.jpg" alt="" />
 						</div>
 					</section>
 
-				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Strategy & Consulting Experience</h2>
 							<p><strong>Intern @ Accenture | Health Consumer Goods Sector</strong></p>
@@ -100,11 +116,11 @@
                             </p>
 						</div>
 						<div class="image">
-							<img src="images/work.png" alt="Accenture Work" />
+							<img src="images/work.png" alt="" />
 						</div>
 					</section>
 
-                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Determinants of Company Valuation</h2>
 							<p>An empirical analysis of Chinese listed firms (2021-2025) to identify key drivers of Price-to-Earnings (PE) ratios.</p>
@@ -115,11 +131,11 @@
                             </ul>
 						</div>
 						<div class="image">
-							<img src="images/finance.jpg" alt="Lasso Regression Plot" />
+							<img src="images/finance.jpg" alt="" />
 						</div>
 					</section>
 
-                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
                         <div class="content">
                             <h2>High-Dimensional Cancer Classification</h2>
                             <p>Based on TCGA Pan-Cancer RNA-Seq dataset (801 samples, 20,531 genes).</p>
@@ -130,11 +146,11 @@
                             </ul>
                         </div>
                         <div class="image">
-                            <img src="images/genes.jpg" alt="Gene Heatmap" />
+                            <img src="images/genes.jpg" alt="" />
                         </div>
                     </section>
 
-				<footer class="wrapper style1 align-center">
+					<footer class="wrapper style1 align-center">
 						<div class="inner">
                             <h2>Get in Touch</h2>
                             <p>Open to Data Scientist and Analyst opportunities.</p>
@@ -149,7 +165,7 @@
 
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -159,3 +175,4 @@
 
 	</body>
 </html>
+
