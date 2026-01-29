@@ -11,35 +11,80 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   
-  <style>
-      body { background-color: #040b14; color: #fff; font-family: "Open Sans", sans-serif; }
-      .portfolio-details { padding: 30px 0; }
-      .portfolio-details h2 { font-size: 26px; font-weight: 700; margin-bottom: 20px; color: #12d640; }
-      .portfolio-info { padding: 30px; box-shadow: 0 0 30px rgba(255, 255, 255, 0.08); border-radius: 8px; }
-      .portfolio-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+<style>
+
+      body, main, section, div, h2, h3, p, img {
+          opacity: 1 !important;
+          visibility: visible !important;
+          transform: none !important;
+          animation: none !important;
+      }
+      
+      body { 
+          background-color: #040b14 !important; 
+          color: #ffffff !important; 
+          font-family: "Open Sans", sans-serif; 
+          overflow-y: auto !important; /* 允许滚动 */
+      }
+
+      #main {
+          margin-left: 0 !important;
+          padding: 0 15px; 
+      }
+      
+      .portfolio-details { padding: 40px 0; }
+      
+      .portfolio-details h2 { 
+          font-size: 26px; 
+          font-weight: 700; 
+          margin-bottom: 20px; 
+          color: #12d640 !important; 
+      }
+      
+      .portfolio-info { 
+          padding: 30px; 
+          background: rgba(255, 255, 255, 0.05); 
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+          border-radius: 8px; 
+          border: 1px solid rgba(255,255,255,0.1);
+      }
+      
+      .portfolio-info h3 { 
+          font-size: 22px; 
+          font-weight: 700; 
+          margin-bottom: 20px; 
+          padding-bottom: 20px; 
+          border-bottom: 1px solid #333; 
+          color: #fff !important;
+      }
+      
       .portfolio-info ul { list-style: none; padding: 0; font-size: 15px; }
-      .portfolio-info ul li { display: flex; }
-      .portfolio-info ul li + li { margin-top: 10px; }
+      .portfolio-info ul li { display: flex; margin-bottom: 10px; color: #ddd; }
       .portfolio-info ul li strong { display: inline-block; width: 100px; color: #12d640; }
       
+      .portfolio-description h3 { color: #fff !important; margin-top: 20px;}
+      .portfolio-description p { color: #eee !important; line-height: 1.8; }
+      .portfolio-description strong { color: #12d640; }
+
       .btn-back {
           display: inline-block;
           background: #12d640;
-          color: #000;
-          padding: 8px 25px;
+          color: #000 !important;
+          padding: 10px 30px;
           border-radius: 50px;
           transition: 0.3s;
-          font-weight: 600;
+          font-weight: 700;
           text-decoration: none;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
       }
-      .btn-back:hover { background: #0eb335; color: #fff; text-decoration: none;}
+      .btn-back:hover { background: #0eb335; color: #fff !important; text-decoration: none;}
 
       .detail-img {
           width: 100%;
           border-radius: 10px;
           margin-bottom: 30px;
           box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+          border: 1px solid rgba(255,255,255,0.1);
       }
   </style>
 </head>
