@@ -6,6 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* PC端优化：限制图片宽度为 45%，防止图片过大挤压文字 
+			   这样左右布局会更均衡，不会出现“图片巨大”的情况
+			*/
+			@media screen and (min-width: 981px) {
+				.spotlight .image {
+					width: 45% !important;
+				}
+				.spotlight .content {
+					width: 55% !important;
+				}
+				/* 专门针对 Banner 也做同样的限制 */
+				.banner .image {
+					width: 50% !important;
+				}
+				.banner .content {
+					width: 50% !important;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -18,14 +38,15 @@
 								<strong>Statistics & Data Science Dual Degree Student</strong><br>
 								Capital University of Economics and Business & University of Arizona<br>
 								<br>
-								Passionate about using <strong>Data Analytics</strong> and <strong>Machine Learning</strong> to solve real-world business problems.
+								Passionate about using <strong>Data Analytics</strong> and <strong>Machine Learning</strong> <br>
+								to solve real-world business problems.
 							</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button primary big wide smooth-scroll-middle">See My Skills</a></li>
 							</ul>
 						</div>
 						<div class="image">
-                            <img src="images/banner.jpg" alt="" />
+							<img src="images/avatar.jpg" alt="Chenyao Qu" />
 						</div>
 					</section>
 
