@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nonparametric Estimation of False Discovery Rate — Chenyao Qu</title><meta name="description" content="Nonparametric Estimation of False Discovery Rate — Research by Chenyao Qu."><link href="favicon.png" rel="icon"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"><style>
+       * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+          background-color: #040b14;
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          line-height: 1.6;
+          padding: 40px 20px;
+      }
+
+      .container {
+          max-width: 1100px;
+          margin: 0 auto;
+      }
+
+      .header {
+          margin-bottom: 40px;
+          border-bottom: 1px solid #333;
+          padding-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .project-title {
+          font-size: 26px;
+          font-weight: 700;
+          color: #fff;
+      }
+
+      .back-btn {
+          color: #12d640;
+          text-decoration: none;
+          border: 2px solid #12d640;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-weight: 600;
+          transition: 0.3s;
+          display: inline-flex;
+          align-items: center;
+      }
+      .back-btn:hover { background: #12d640; color: #000; }
+      .back-btn i { margin-right: 5px; }
+
+      .content-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          margin-bottom: 50px;
+      }
+
+
+      .left-column {
+          flex: 1 1 600px;
+      }
+
+      .project-img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 1px solid rgba(255,255,255,0.2);
+          background-color: #111;
+      }
+
+      .right-column {
+          flex: 1 1 300px;
+          background: rgba(255, 255, 255, 0.05);
+          padding: 30px;
+          border-radius: 10px;
+          border: 1px solid rgba(255,255,255,0.1);
+          height: fit-content;
+      }
+
+      .info-title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #444;
+          padding-bottom: 10px;
+      }
+
+      .info-list { list-style: none; }
+      .info-list li { margin-bottom: 15px; color: #ddd; }
+      .info-list strong { color: #12d640; margin-right: 8px; }
+
+      .story-section {
+          background: #0b1521;
+          padding: 30px;
+          border-radius: 10px;
+      }
+      .story-title { color: #12d640; margin-bottom: 15px; font-size: 22px; font-weight: bold; }
+      .story-text { margin-bottom: 15px; color: #ccc; }
+
+
+.header { gap: 20px; flex-wrap: wrap; } .back-btn { flex-shrink: 0; } .story-section + .story-section { margin-top: 24px; } .story-text:last-child { margin-bottom: 0; }
+.research-figure { margin-bottom: 32px; background: #fff; border-radius: 10px; overflow: hidden; } .research-figure img { width: 100%; height: auto; display: block; }
+</style></head><body><main class="container"><div class="header"><h1 class="project-title">Nonparametric Estimation of False Discovery Rate</h1><a href="index.html#portfolio" class="back-btn">← Back to Projects</a></div><figure class="research-figure"><a href="images/fdr-results.png" target="_blank" rel="noopener" aria-label="Open full-size research figure"><img src="images/fdr-results.png" alt="P-value distribution, underlying signal and false discovery rate control limit"></a></figure><div class="content-wrapper"><aside class="right-column"><h2 class="info-title">Project Info</h2><ul class="info-list"><li><strong>Role:</strong> Core Researcher</li><li><strong>Date:</strong> Dec 2025 – Present</li><li><strong>Location:</strong> Beijing, China</li><li><strong>Tech Stack:</strong> Python, Beta-Uniform Mixture models, LaTeX</li><li><strong>Status:</strong> Ongoing research</li></ul></aside></div><div class="story-section"><h2 class="story-title">Research Focus</h2><p class="story-text">Research on high-dimensional data analysis and multiple hypothesis testing, centered on the Beta-Uniform Mixture (BUM) model and FDR control under diverse data structures. Contributed to literature review, statistical hypothesis construction, experimental design, code replication and result validation.</p></div><div class="story-section"><h2 class="story-title">Analytical Pipeline</h2><p class="story-text">Built an end-to-end Python pipeline for data cleaning, hypothesis testing, p-value generation, BUM model fitting, FDR threshold selection and visualization. Applied t-tests, chi-square independence tests, Mann–Whitney U tests, fixed-effect models and grand-mean contrasts.</p></div><div class="story-section"><h2 class="story-title">Applications &amp; Findings</h2><p class="story-text">Extended the model to global stock portfolios, 71 cryptocurrencies, 450,000 Amazon reviews and SECOM semiconductor data with 590 process variables. Identified 77 abnormal market weeks and 30 failure-correlated process variables at the 5% target FDR level.</p></div><div class="story-section"><h2 class="story-title">Robustness &amp; Validation</h2><p class="story-text">Analyzed sensitivity to cluster count, variable encoding and anomaly scoring. Evaluated sample-level fault detection with conformal p-values, PCA T² and SPE statistics, and co-authored the research paper in LaTeX.</p></div></main></body></html>
