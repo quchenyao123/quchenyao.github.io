@@ -6,10 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Chenyao Qu - Data Science Portfolio</title>
-  <meta content="Data Science Portfolio of Chenyao Qu" name="description">
+  <meta content="Chenyao Qu — Statistics and Data Science student researching statistical inference, machine learning and financial data analytics." name="description">
   <meta content="Data Science, Machine Learning, Statistics" name="keywords">
 
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="favicon.png" rel="icon">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -21,38 +21,73 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
-  
+
   <style>
       .portfolio-wrap {
-          background-color: #333; 
+          background-color: #333;
       }
       .portfolio-wrap img {
           width: 100%;
-          height: 250px; 
+          height: 250px;
           min-height: 250px;
-          object-fit: cover; 
+          object-fit: cover;
           display: block;
       }
-      
+
       .about .col-lg-4 img {
           width: 100%;
-          max-width: 350px; 
+          max-width: 350px;
           border-radius: 15px;
           box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-          display: block; 
+          display: block;
       }
-      
+
       .school-logo {
           height: 80px !important;
           width: auto !important;
           margin-bottom: 15px;
           display: block;
       }
-      
+
       .domain-box {
           margin-top: 20px;
           padding: 10px;
           border-left: 2px solid #12d640;
+      }
+
+      .services .cv-card { text-align: left; margin: 0 0 20px; padding: 24px; }
+      .cv-card h3, .cv-card h4, .cv-subheading { color: #12d640; }
+      .services .cv-card p, .cv-card li { font-size: 16px; line-height: 1.65; }
+      .services .cv-card p { margin-bottom: 12px; }
+      .cv-card ul { padding-left: 22px; margin-bottom: 0; }
+      .cv-card li { margin-bottom: 10px; }
+      .cv-meta { color: #ccc; }
+      .cv-subheading { font-size: 22px; margin: 30px 0 20px; }
+
+      .portfolio .image-card { display: block; background: #fff; }
+      .portfolio .image-card img { object-fit: contain; background: #fff; }
+      .portfolio .company-card img { padding: 28px; }
+      .portfolio .research-image-card img { padding: 6px; }
+      .portfolio .portfolio-wrap .portfolio-info { padding: 45px 32px; }
+      .portfolio .portfolio-wrap .portfolio-links span { color: #fff; font-size: 28px; }
+      .portfolio .image-card:focus-visible { outline: 3px solid #12d640; outline-offset: 4px; }
+      .portfolio .image-card:focus-visible::before { opacity: 1; top: 0; right: 0; bottom: 0; left: 0; }
+      .portfolio .image-card:focus-visible .portfolio-info { opacity: 1; }
+      .nav-menu li + li { margin-left: 20px; }
+      .nav-menu a { font-size: 16px; }
+      #header.header-top h1 { font-size: 30px; }
+      #honors .cv-card h3 { font-size: 22px; line-height: 1.5; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        #header.header-top .nav-menu li + li { margin-left: 13px; }
+        #header.header-top .nav-menu a { font-size: 14px; }
+        #header.header-top h1 { font-size: 26px; }
+      }
+      @media (hover: none) {
+        .portfolio .portfolio-wrap .portfolio-info { opacity: 1; top: auto; background: rgba(4,11,20,.88); padding: 12px; }
+        .portfolio .portfolio-wrap .portfolio-info::before, .portfolio .portfolio-wrap .portfolio-info::after { display: none; }
+        .portfolio .portfolio-wrap .portfolio-info h4 { font-size: 17px; margin-bottom: 4px; }
+        .portfolio .portfolio-wrap .portfolio-info p { font-size: 12px; }
+        .portfolio .portfolio-wrap .portfolio-links { margin-top: 0; }
       }
   </style>
 </head>
@@ -64,13 +99,14 @@
 
       <h1><a href="index.html">Chenyao Qu</a></h1>
       <h2 style="color:#fff">I'm a <span class="typing" style="color:#12D640">Data Science Student</span></h2>
-      
+
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
           <li><a href="#about"><span>About</span></a></li>
           <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
+          <li><a href="#honors"><span>Honors &amp; Awards</span></a></li>
+          <li><a href="#internship"><span>Internship</span></a></li>
           <li><a href="#portfolio"> <span>Projects</span></a></li>
           <li><a href="#skills"> <span>Skills</span></a></li>
           <li><a href="#contacts"> <span>Contact</span></a></li>
@@ -94,13 +130,13 @@
         <div class="col-lg-4" data-aos="fade-right">
           <img src="images/avatar.jpg" class="img-fluid" alt="Chenyao Qu">
         </div>
-        
+
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Statistics & Data Science Dual Degree Student</h3>
           <p class="font-italic">
-            Passionate about using data to solve real-world problems.
+            Statistics and Data Science student at Capital University of Economics and Business and the University of Arizona, with research and internship experience in statistical inference, machine learning and financial data analytics.
           </p>
-          
+
           <div class="row">
             <div class="col-lg-6">
               <ul>
@@ -117,21 +153,21 @@
           </div>
 
           <p>
-            With a strong foundation in both Python and R, I specialize in translating raw data into actionable insights across three key domains:
+            I use Python, R and SQL to build statistical models and reliable data workflows. My recent work spans futures market liquidity, false discovery rate estimation, deep learning for water quality monitoring, and automated financial data processing.
           </p>
-          
+
           <div class="row mt-3">
             <div class="col-md-4 domain-box">
                <strong style="color:#12d640">01</strong><br>
-               <strong>Machine Learning & <br>Image Processing</strong>
+               <strong>Statistical Inference &amp;<br>Machine Learning</strong>
             </div>
             <div class="col-md-4 domain-box">
                <strong style="color:#12d640">02</strong><br>
-               <strong>Business Analytics</strong>
+               <strong>Financial Data Analytics</strong>
             </div>
             <div class="col-md-4 domain-box">
                <strong style="color:#12d640">03</strong><br>
-               <strong>Life Sciences</strong>
+               <strong>Business &amp; Strategy Analytics</strong>
             </div>
           </div>
 
@@ -139,61 +175,37 @@
       </div>
 
     </div>
-  </section><section id="education" class="services">
+  </section><section id="education" class="services"><div class="container"><div class="section-title"><h2>Education</h2></div><div class="row"><div class="col-lg-12"><div class="icon-box cv-card"><img src="images/arizona.png" alt="University of Arizona" class="school-logo"><h4>University of Arizona</h4><p><em>Bachelor of Science in Data Science</em></p><p class="cv-meta">Arizona, U.S. | Sep 2023 – Jun 2027 (expected)</p><p><strong>GPA:</strong> 3.86/4.0</p><p><strong>Relevant Coursework:</strong> Machine Learning, Linear Regression, Time Series Analysis, Non-Parametric Statistics, Sampling Techniques.</p></div>
+<div class="icon-box cv-card"><img src="images/cueb.jpg" alt="Capital University of Economics and Business" class="school-logo"><h4>Capital University of Economics and Business</h4><p><em>Bachelor of Science in Statistics — Chinese-Foreign Cooperative Education Program</em></p><p class="cv-meta">Beijing, China | Sep 2023 – Jun 2027 (expected)</p><p><strong>Average Score:</strong> 91.25/100 &nbsp; | &nbsp; <strong>GPA:</strong> 4.11/5.0</p><p><strong>Relevant Coursework:</strong> Economic Statistical Methods and Models, Database Principles and Applications, High-Dimensional Data Analysis, Multivariate Statistics, Distributed Computing, Bayesian Statistics, C Programming, Probability Theory.</p></div></div></div></div></section>
+
+  <section id="honors" class="services">
     <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding: 20px; margin-bottom: 20px;">
-              <img src="images/arizona.png" alt="University of Arizona" class="school-logo">
-              <h4 style="text-align:left; color:#12d640">University of Arizona</h4>
-              <p style="text-align:left;color:#fff;"><em>Bachelor of Science in Data Science</em></p>
-              <h6 style="text-align:left;color:#ccc;">Relevant Coursework</h6>
-              <ul style="text-align:left;color:#fff;">
-                <li>Machine Learning, Linear Regression, Statistical Computing</li>
-              </ul>
-            </div>
-
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding: 20px;">
-              <img src="images/cueb.jpg" alt="CUEB" class="school-logo">
-              <h4 style="text-align:left; color:#12d640">Capital University of Economics and Business</h4>
-              <p style="text-align:left;color:#fff;"><em>Bachelor of Science in Statistics</em></p>
-              <h6 style="text-align:left;color:#ccc;">Relevant Coursework</h6>
-              <ul style="text-align:left;color:#fff;">
-                <li>High Dimensional Data Analysis, Multivariate Statistics, Database Principle and Application</li>
-              </ul>
-            </div>
-
-        </div>
-      </div>
+      <div class="section-title"><h2>Honors &amp; Awards</h2></div>
+      <div class="icon-box cv-card"><h3>Awards</h3><ul><li>Third Prize (Campus Round), CMAU National Market Research and Business Planning Competition for College Students — May 2025.</li>
+<li>Second Prize, “Challenge Cup” University Student Academic and Scientific Works Competition — Apr 2025.</li>
+<li>University Academic Excellence Scholarship — First and Second Academic Years.</li>
+<li>Third Prize (Beijing Division), China International College Students’ Innovation Competition — Nov 2024.</li>
+<li>Third Prize, “Qingchuang Beijing” 2024 “Challenge Cup” Capital University Student Entrepreneurship Competition — Jul 2024.</li></ul></div>
+      <div class="icon-box cv-card"><h3>President, Student Union, School of Data Sciences, CUEB</h3><p class="cv-meta">Jun 2024 – Oct 2024</p></div>
     </div>
   </section>
 
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left; color:#12d640">Accenture (China)</h4>
-                <h5 style="text-align:left;">Strategy & Consulting Intern</h5>
-                <p style="text-align:left;color:#fff"><em>Sector: Health Consumer Goods</em></p>
-                <ul style="text-align:left;">
-                  <li><strong>Market Research:</strong> Spearheaded comprehensive research on the health consumer goods sector, analyzing market size, competitive dynamics, and consumer behavior.</li>
-                  <li><strong>Strategic Analysis:</strong> Developed detailed competitive landscape maps and segmentation models.</li>
-                  <li><strong>Analytical Frameworks:</strong> Applied <strong>PESTEL</strong> and <strong>Market Sizing</strong> to structure macro-environmental analysis. Decoded consumer needs through <strong>Persona Construction</strong> and <strong>Value Chain Analysis</strong>.</li>
-                  <li><strong>Impact:</strong> Contributed core analytical slides to the final strategy deck, identifying key growth opportunities for the client.</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-    </div>
-  </section>
+  <section id="internship" class="portfolio"><div class="container"><div class="section-title"><h2>Internship</h2><p>Professional Experience</p></div><div class="row internship-grid"><div class="col-lg-4 col-md-6 portfolio-item ">
+          <a class="portfolio-wrap image-card company-card" href="internship-capital-securities.html" aria-label="Capital Securities — view details">
+            <img src="images/companies/capital-securities.png" class="img-fluid" alt="Capital Securities logo" width="600" height="400">
+            <div class="portfolio-info"><h4>Capital Securities</h4><p>Digital Technology Intern</p><div class="portfolio-links"><span><i class="bx bx-link" aria-hidden="true"></i></span></div></div>
+          </a>
+        </div><div class="col-lg-4 col-md-6 portfolio-item ">
+          <a class="portfolio-wrap image-card company-card" href="internship-accenture.html" aria-label="Accenture — view details">
+            <img src="images/companies/accenture.svg" class="img-fluid" alt="Accenture logo" width="600" height="400">
+            <div class="portfolio-info"><h4>Accenture</h4><p>Strategy Consulting Intern</p><div class="portfolio-links"><span><i class="bx bx-link" aria-hidden="true"></i></span></div></div>
+          </a>
+        </div><div class="col-lg-4 col-md-6 portfolio-item ">
+          <a class="portfolio-wrap image-card company-card" href="internship-guanzheng.html" aria-label="Beijing Guanzheng CPA — view details">
+            <img src="images/companies/guanzheng.png" class="img-fluid" alt="Beijing Guanzheng Certified Public Accountants Co., Ltd. logo" width="600" height="400">
+            <div class="portfolio-info"><h4>Beijing Guanzheng CPA</h4><p>Audit &amp; Data Analysis Intern</p><div class="portfolio-links"><span><i class="bx bx-link" aria-hidden="true"></i></span></div></div>
+          </a>
+        </div></div></div></section>
 
   <section id="portfolio" class="portfolio">
     <div class="container">
@@ -214,13 +226,26 @@
       </div>
 
       <div class="row portfolio-container">
+<div class="col-lg-4 col-md-6 portfolio-item filter-stats filter-ml">
+          <a class="portfolio-wrap image-card research-image-card" href="portfolio-futures.html" aria-label="Futures Trading Volume — view details">
+            <img src="images/futures-results.png" class="img-fluid" alt="Transfer learning curves for liquid and illiquid futures contracts" width="600" height="400">
+            <div class="portfolio-info"><h4>Futures Trading Volume</h4><p>Transfer Learning / Statistical Modeling</p><div class="portfolio-links"><span><i class="bx bx-link" aria-hidden="true"></i></span></div></div>
+          </a>
+        </div>
+<div class="col-lg-4 col-md-6 portfolio-item filter-stats">
+          <a class="portfolio-wrap image-card research-image-card" href="portfolio-fdr.html" aria-label="False Discovery Rate Estimation — view details">
+            <img src="images/fdr-results.png" class="img-fluid" alt="P-value distribution, underlying signal and false discovery rate control limit" width="600" height="400">
+            <div class="portfolio-info"><h4>False Discovery Rate Estimation</h4><p>High-Dimensional Statistical Inference</p><div class="portfolio-links"><span><i class="bx bx-link" aria-hidden="true"></i></span></div></div>
+          </a>
+        </div>
+
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
           <div class="portfolio-wrap">
             <img src="images/project.jpg" class="img-fluid" alt="Algae Project">
             <div class="portfolio-info">
-              <h4>Blue-Green Algae CNN</h4>
-              <p>Computer Vision / Python</p>
+              <h4>Algal Bloom Monitoring</h4>
+              <p>CNN / Published Research</p>
               <div class="portfolio-links">
                 <a href="portfolio-algae.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
@@ -258,28 +283,9 @@
     </div>
   </section>
 
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages & Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/r-project/r-project-ar21.svg" alt="R" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="Tensorflow" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg" alt="Power BI" height="50">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" height="50">
-                </p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <section id="skills" class="services"><div class="container"><div class="section-title"><h2>Skills</h2></div><div class="row"><div class="col-lg-12"><div class="icon-box cv-card" style="background:#fff;color:#09203a"><h4 style="color:#09203a">Programming &amp; Tools</h4><p>Python · R · SQL · C++ · Power BI · LaTeX · Wind · iFind</p><p><strong>Research &amp; Data Workflows:</strong> Pandas, Statsmodels, Scikit-learn, PyTorch, Jupyter Notebook, WindPy / WSS.</p></div>
+<div class="icon-box cv-card"><h4>Languages</h4><p><strong>English:</strong> IELTS 7.0 overall</p><p><strong>Mandarin Chinese:</strong> Native</p></div>
+<div class="icon-box cv-card"><h4>Certificates</h4><ul><li>National Market Research and Analysis Specialized Skills Certificate</li><li>Market Analysis Researchers — Level 1</li></ul></div></div></div></div></section>
 
   <section id="contacts" class="contact">
     <div class="container">

@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Joint Modeling of Futures Trading Volume — Chenyao Qu</title><meta name="description" content="Joint Modeling of Futures Trading Volume — Research by Chenyao Qu."><link href="favicon.png" rel="icon"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"><style>
+       * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+          background-color: #040b14;
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          line-height: 1.6;
+          padding: 40px 20px;
+      }
+
+      .container {
+          max-width: 1100px;
+          margin: 0 auto;
+      }
+
+      .header {
+          margin-bottom: 40px;
+          border-bottom: 1px solid #333;
+          padding-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .project-title {
+          font-size: 26px;
+          font-weight: 700;
+          color: #fff;
+      }
+
+      .back-btn {
+          color: #12d640;
+          text-decoration: none;
+          border: 2px solid #12d640;
+          padding: 8px 20px;
+          border-radius: 50px;
+          font-weight: 600;
+          transition: 0.3s;
+          display: inline-flex;
+          align-items: center;
+      }
+      .back-btn:hover { background: #12d640; color: #000; }
+      .back-btn i { margin-right: 5px; }
+
+      .content-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          margin-bottom: 50px;
+      }
+
+
+      .left-column {
+          flex: 1 1 600px;
+      }
+
+      .project-img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 1px solid rgba(255,255,255,0.2);
+          background-color: #111;
+      }
+
+      .right-column {
+          flex: 1 1 300px;
+          background: rgba(255, 255, 255, 0.05);
+          padding: 30px;
+          border-radius: 10px;
+          border: 1px solid rgba(255,255,255,0.1);
+          height: fit-content;
+      }
+
+      .info-title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #444;
+          padding-bottom: 10px;
+      }
+
+      .info-list { list-style: none; }
+      .info-list li { margin-bottom: 15px; color: #ddd; }
+      .info-list strong { color: #12d640; margin-right: 8px; }
+
+      .story-section {
+          background: #0b1521;
+          padding: 30px;
+          border-radius: 10px;
+      }
+      .story-title { color: #12d640; margin-bottom: 15px; font-size: 22px; font-weight: bold; }
+      .story-text { margin-bottom: 15px; color: #ccc; }
+
+
+.header { gap: 20px; flex-wrap: wrap; } .back-btn { flex-shrink: 0; } .story-section + .story-section { margin-top: 24px; } .story-text:last-child { margin-bottom: 0; }
+.research-figure { margin-bottom: 32px; background: #fff; border-radius: 10px; overflow: hidden; } .research-figure img { width: 100%; height: auto; display: block; }
+</style></head><body><main class="container"><div class="header"><h1 class="project-title">Joint Modeling of Futures Trading Volume</h1><a href="index.html#portfolio" class="back-btn">← Back to Projects</a></div><figure class="research-figure"><a href="images/futures-results.png" target="_blank" rel="noopener" aria-label="Open full-size research figure"><img src="images/futures-results.png" alt="Transfer learning curves for liquid and illiquid futures contracts"></a></figure><div class="content-wrapper"><aside class="right-column"><h2 class="info-title">Project Info</h2><ul class="info-list"><li><strong>Role:</strong> Core Researcher</li><li><strong>Date:</strong> Apr 2026 – Present</li><li><strong>Location:</strong> Beijing, China</li><li><strong>Tech Stack:</strong> Python, Pandas, Statsmodels, Scikit-learn, PyTorch</li><li><strong>Status:</strong> English paper in preparation for submission to Econometrics and Statistics</li></ul></aside></div><div class="story-section"><h2 class="story-title">Research Focus</h2><p class="story-text">Joint Modeling of Zero Values, Heterogeneity and Information Sparsity in Futures Trading Volume investigates trading occurrence, positive trading intensity and liquidity differences across futures contracts.</p></div><div class="story-section"><h2 class="story-title">Data &amp; Statistical Modeling</h2><p class="story-text">Cleaned and processed over two million daily observations, including missing value imputation, variable construction and distribution diagnosis. Identified 28.70% zero-trade observations, significant right-skewness and overdispersion.</p><p class="story-text">Constructed a two-stage Hurdle model to estimate trading occurrence separately from volume conditional on positive transactions, and introduced a negative binomial model for robustness testing.</p></div><div class="story-section"><h2 class="story-title">Market Structure &amp; Transfer Learning</h2><p class="story-text">Built a Variational Dirichlet Process Gaussian Mixture Model (VDP-GMM) with Scikit-learn to cluster 8,790 futures contracts. Identified six major latent market structures, including high-liquidity, intermittent-trading, low-liquidity and nearly dormant contract types.</p><p class="story-text">Developed an autoencoder-based transfer learning pipeline in PyTorch to transfer feature representations from highly active contracts to low-activity contracts. The findings support liquidity risk identification, contract management and market anomaly monitoring.</p></div></main></body></html>
