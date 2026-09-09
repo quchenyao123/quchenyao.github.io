@@ -51,7 +51,7 @@
 
   // Activate/show sections on load with hash links
   if (window.location.hash) {
-    var initial_nav = window.location.hash;
+    var initial_nav = window.location.hash === "#experience" ? "#internship" : window.location.hash;
     if ($(initial_nav).length) {
       $('#header').addClass('header-top');
       $('.nav-menu .active, .mobile-nav .active').removeClass('active');
